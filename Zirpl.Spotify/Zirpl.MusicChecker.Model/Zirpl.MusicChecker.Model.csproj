@@ -63,8 +63,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Zirpl.AppEngine">
-      <HintPath>..\packages\Zirpl.AppEngine.1.0.10\lib\net45\Zirpl.AppEngine.dll</HintPath>
+    <Reference Include="Zirpl.AppEngine, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Zirpl.AppEngine.1.0.12\lib\net45\Zirpl.AppEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

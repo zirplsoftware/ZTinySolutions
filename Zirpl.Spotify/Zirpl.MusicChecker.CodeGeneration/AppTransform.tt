@@ -14,7 +14,8 @@
 	//var appGenerator = new Zirpl.AppEngine.CodeGeneration.AppGenerator(this);
 	//var modelTransform = new Zirpl.AppEngine.CodeGeneration.ModelTransform(this.Host, appGenerator);
 	var modelTemplate = new Zirpl.AppEngine.CodeGeneration.Templates.ModelTemplate(this, templateHelper);
-	this.Write(modelTemplate.TransformText());
+	modelTemplate.TransformText();
+	//this.Write(modelTemplate.TransformText());
 //	var modelMetadataTransform = new Zirpl.AppEngine.CodeGeneration.ModelMetadataTransform(this.Host, appGenerator);
 	//this.Write(modelMetadataTransform.TransformText());
 	templateHelper.End();
