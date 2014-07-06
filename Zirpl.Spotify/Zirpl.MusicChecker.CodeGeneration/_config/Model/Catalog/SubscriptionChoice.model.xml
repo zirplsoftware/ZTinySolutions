@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Type Name="SubscriptionChoice" BaseClassOverride="" SubNamespace="Catalog">
+	
+		
+			<Properties>
+				<Property Name="DisplayProduct" Type="Zirpl.MusicChecker.Model.Catalog.DisplayProduct" IsRelationship="true" IsRequired="true" />
+				<Property Name="SubscriptionPeriod" Type="Zirpl.MusicChecker.Model.Subscriptions.SubscriptionPeriod" IsRelationship="true" IsRequired="true" CreateOnNullPost="true" />
+				<Property Name="PriceEach" Type="currency" IsRequired="true" MinValue="0.01" />
+			</Properties>
+		
+	
+</Type>

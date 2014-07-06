@@ -102,12 +102,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Zirpl.MusicChecker\Zirpl.MusicChecker.csproj">
-      <Project>{3925ccec-3b6c-4993-9478-a974ff7edf13}</Project>
-      <Name>Zirpl.MusicChecker</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,29 +3,79 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.MusicChecker", "Zirpl.MusicChecker\Zirpl.MusicChecker.csproj", "{3925CCEC-3B6C-4993-9478-A974FF7EDF13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.MusicChecker.Web", "Zirpl.MusicChecker.Web\Zirpl.MusicChecker.Web.csproj", "{848A1FB4-80AF-476D-A724-DE6F9474D405}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.MusicChecker.Wpf", "MusicCatalogger\Zirpl.MusicChecker.Wpf.csproj", "{AEE9A75D-181B-4EAB-952E-38DC048E4256}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.MusicChecker.CodeGeneration", "Zirpl.MusicChecker.CodeGeneration\Zirpl.MusicChecker.CodeGeneration.csproj", "{099C709D-E8B4-4A9B-8573-07FA74BC994E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.AppEngine.CodeGeneration.VS2013", "..\..\ZAppEngine\Zirpl.AppEngine.CodeGeneration.VS2013\Zirpl.AppEngine.CodeGeneration.VS2013.csproj", "{F8855F9A-35D1-4C30-BB53-1FD89A984989}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97DBBD27-8AB1-4143-8A11-3D3E7D4424CF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zirpl.MusicChecker.Model", "Zirpl.MusicChecker.Model\Zirpl.MusicChecker.Model.csproj", "{8A286E17-16E1-44F2-A447-370F204426BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3925CCEC-3B6C-4993-9478-A974FF7EDF13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3925CCEC-3B6C-4993-9478-A974FF7EDF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3925CCEC-3B6C-4993-9478-A974FF7EDF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3925CCEC-3B6C-4993-9478-A974FF7EDF13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEE9A75D-181B-4EAB-952E-38DC048E4256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEE9A75D-181B-4EAB-952E-38DC048E4256}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEE9A75D-181B-4EAB-952E-38DC048E4256}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEE9A75D-181B-4EAB-952E-38DC048E4256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Release|ARM.ActiveCfg = Release|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Release|x64.ActiveCfg = Release|Any CPU
+		{848A1FB4-80AF-476D-A724-DE6F9474D405}.Release|x86.ActiveCfg = Release|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Release|x64.ActiveCfg = Release|Any CPU
+		{099C709D-E8B4-4A9B-8573-07FA74BC994E}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8855F9A-35D1-4C30-BB53-1FD89A984989}.Release|x86.ActiveCfg = Release|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Release|x64.ActiveCfg = Release|Any CPU
+		{8A286E17-16E1-44F2-A447-370F204426BC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
 	EndGlobalSection
 EndGlobal

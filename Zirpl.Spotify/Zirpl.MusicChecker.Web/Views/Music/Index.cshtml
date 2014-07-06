@@ -1,0 +1,34 @@
+﻿@model Zirpl.MusicChecker.Web.Models.MusicCatalog
+@{
+    ViewBag.Title = "Music";
+}
+<div>
+    @foreach (var artist in Model.Artists.OrderBy(o => o.Name))
+    {
+        <div class="panel">
+            <div class="h1">
+                @artist.Name
+            </div>
+            @*@if (artist.SpotifyArtists.Any())
+            {
+                <div class="h4">Spotify artist matches:</div>
+                foreach (var spotifyArtist in artist.SpotifyArtists)
+                {
+                    <div>
+                        <a href="@spotifyArtist.Href">@spotifyArtist.Name</a>
+                    </div>
+                }
+            }*@
+            @if (artist.Albums.Any())
+            {
+                <div class="h4">Albums on disc:</div>
+                foreach (var album in artist.Albums)
+                {
+                    <div>
+                        <a href="">@album.Name</a>
+                    </div>
+                }
+            }
+        </div>
+    }
+</div>

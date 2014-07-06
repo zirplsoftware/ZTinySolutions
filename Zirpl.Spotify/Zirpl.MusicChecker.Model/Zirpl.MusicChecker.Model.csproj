@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A286E17-16E1-44F2-A447-370F204426BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Zirpl.MusicChecker.Model</RootNamespace>
+    <AssemblyName>Zirpl.MusicChecker.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.2.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\packages\Common.Logging.Log4Net.2.0.1\lib\net20\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling">
+      <HintPath>..\packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data">
+      <HintPath>..\packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zirpl.AppEngine">
+      <HintPath>..\packages\Zirpl.AppEngine.1.0.10\lib\net45\Zirpl.AppEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="_auto\Address.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\Brand.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\Category.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\DisplayProduct.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\ProductReview.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\SubscriptionChoice.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\SubscriptionChoiceTierPriceCombination.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\TierPrice.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Catalog\TierShipment.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Customers\Customer.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Customers\CustomerChargeOption.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Customers\CustomerReferral.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Customers\CustomerTag.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Membership\PasswordResetLink.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Membership\Visitor.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\NamePrefixType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\NameSuffixType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Notifications\EmailEvent.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Notifications\EmailEventType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\Charge.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\ChargeMethodType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\ChargeStatusType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\ChargeType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\DiscountUsage.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\DiscountUsageRestrictionType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\Order.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\OrderChargeStatusType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\OrderItem.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\OrderStatusType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\ShoppingCartItem.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\StripeCharge.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\StripeCustomerChargeOption.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\SubscriptionOrderItem.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Orders\SubscriptionOrderItemType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Partners\Partner.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Partners\PartnerReferral.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Partners\PartnerReferralCouponRequest.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Partners\PartnerReferralCouponRequestStatusType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Partners\PartnerReferralPlan.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Promotions\Discount.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Promotions\DiscountAmountType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Promotions\DiscountApplicabilityType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Promotions\PromoCode.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Promotions\Referral.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Settings\StateProvinceType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Settings\SystemSetting.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Settings\TaxRule.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\PendingSubscriptionChange.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\Subscription.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\SubscriptionInstance.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\SubscriptionPeriod.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\SubscriptionPeriodType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Subscriptions\SubscriptionStatusType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Tag.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="_auto\AppTransform.txt4" />
+    <None Include="_auto\Catalog\AppTransform.txt4" />
+    <None Include="_auto\Customers\AppTransform.txt4" />
+    <None Include="_auto\Membership\AppTransform.txt4" />
+    <None Include="_auto\Notifications\AppTransform.txt4" />
+    <None Include="_auto\Orders\AppTransform.txt4" />
+    <None Include="_auto\Partners\AppTransform.txt4" />
+    <None Include="_auto\Promotions\AppTransform.txt4" />
+    <None Include="_auto\Settings\AppTransform.txt4" />
+    <None Include="_auto\Subscriptions\AppTransform.txt4" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.2.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
