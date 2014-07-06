@@ -53,8 +53,6 @@
       <LastGenOutput>AppTransform.cs</LastGenOutput>
       <TransformOnBuild>True</TransformOnBuild>
     </None>
-    <None Include="_config\Model\Orders\ShipBatch.model.xml.exclude" />
-    <None Include="_config\Model\Orders\ShipBatchItem.model.xml.exclude" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -68,60 +66,10 @@
   <ItemGroup>
     <Content Include="_config\Model\Address.model.xml" />
     <Content Include="_config\AppDefinition.app.xml" />
-    <Content Include="_config\Model\Catalog\Brand.model.xml" />
-    <Content Include="_config\Model\Catalog\Category.model.xml" />
-    <Content Include="_config\Model\Catalog\DisplayProduct.model.xml" />
-    <Content Include="_config\Model\Catalog\ProductReview.model.xml" />
-    <Content Include="_config\Model\Catalog\SubscriptionChoice.model.xml" />
-    <Content Include="_config\Model\Catalog\SubscriptionChoiceTierPriceCombination.model.xml" />
-    <Content Include="_config\Model\Catalog\TierPrice.model.xml" />
-    <Content Include="_config\Model\Catalog\TierShipment.model.xml" />
-    <Content Include="_config\Model\Customers\Customer.model.xml" />
-    <Content Include="_config\Model\Customers\CustomerChargeOption.model.xml" />
-    <Content Include="_config\Model\Customers\CustomerReferral.model.xml" />
-    <Content Include="_config\Model\Customers\CustomerTag.model.xml" />
-    <Content Include="_config\Model\Membership\PasswordResetLink.model.xml" />
-    <Content Include="_config\Model\Membership\User.model.xml" />
-    <Content Include="_config\Model\Membership\Visitor.model.xml" />
     <Content Include="_config\Model\NamePrefixType.model.xml" />
     <Content Include="_config\Model\NameSuffixType.model.xml" />
-    <Content Include="_config\Model\Notifications\EmailEvent.model.xml" />
-    <Content Include="_config\Model\Notifications\EmailEventType.model.xml" />
-    <Content Include="_config\Model\Orders\Charge.model.xml" />
-    <Content Include="_config\Model\Orders\ChargeMethodType.model.xml" />
-    <Content Include="_config\Model\Orders\ChargeStatusType.model.xml" />
-    <Content Include="_config\Model\Orders\ChargeType.model.xml" />
-    <Content Include="_config\Model\Orders\DiscountUsage.model.xml" />
-    <Content Include="_config\Model\Orders\DiscountUsageRestrictionType.model.xml" />
-    <Content Include="_config\Model\Orders\Order.model.xml" />
-    <Content Include="_config\Model\Orders\OrderChargeStatusType.model.xml" />
-    <Content Include="_config\Model\Orders\OrderItem.model.xml" />
-    <Content Include="_config\Model\Orders\OrderStatusType.model.xml" />
-    <Content Include="_config\Model\Orders\ShoppingCartItem.model.xml" />
-    <Content Include="_config\Model\Orders\StripeCharge.model.xml" />
-    <Content Include="_config\Model\Orders\StripeCustomerChargeOption.model.xml" />
-    <Content Include="_config\Model\Orders\SubscriptionOrderItem.model.xml" />
-    <Content Include="_config\Model\Orders\SubscriptionOrderItemType.model.xml" />
-    <Content Include="_config\Model\Partners\Partner.model.xml" />
-    <Content Include="_config\Model\Partners\PartnerReferral.model.xml" />
-    <Content Include="_config\Model\Partners\PartnerReferralCouponRequest.model.xml" />
-    <Content Include="_config\Model\Partners\PartnerReferralCouponRequestStatusType.model.xml" />
-    <Content Include="_config\Model\Partners\PartnerReferralPlan.model.xml" />
-    <Content Include="_config\Model\Promotions\Discount.model.xml" />
-    <Content Include="_config\Model\Promotions\DiscountAmountType.model.xml" />
-    <Content Include="_config\Model\Promotions\DiscountApplicabilityType.model.xml" />
-    <Content Include="_config\Model\Promotions\PromoCode.model.xml" />
-    <Content Include="_config\Model\Promotions\Referral.model.xml" />
     <Content Include="_config\Model\Settings\StateProvinceType.model.xml" />
     <Content Include="_config\Model\Settings\SystemSetting.model.xml" />
-    <Content Include="_config\Model\Settings\TaxRule.model.xml" />
-    <Content Include="_config\Model\Subscriptions\PendingSubscriptionChange.model.xml" />
-    <Content Include="_config\Model\Subscriptions\Subscription.model.xml" />
-    <Content Include="_config\Model\Subscriptions\SubscriptionInstance.model.xml" />
-    <Content Include="_config\Model\Subscriptions\SubscriptionPeriod.model.xml" />
-    <Content Include="_config\Model\Subscriptions\SubscriptionPeriodType.model.xml" />
-    <Content Include="_config\Model\Subscriptions\SubscriptionStatusType.model.xml" />
-    <Content Include="_config\Model\Tag.model.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

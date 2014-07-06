@@ -10,14 +10,14 @@
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.Collections.Generic" #> 
 <#
-	//new Zirpl.AppEngine.CodeGeneration.AppGenerator(this).GenerateApp(this.Host);
+	var templateHelper = new Zirpl.AppEngine.CodeGeneration.TemplateHelper(this);
 	//var appGenerator = new Zirpl.AppEngine.CodeGeneration.AppGenerator(this);
 	//var modelTransform = new Zirpl.AppEngine.CodeGeneration.ModelTransform(this.Host, appGenerator);
-	var modelTransform = new Zirpl.AppEngine.CodeGeneration.ModelTransform(this.Host, null);
-	this.Write(modelTransform.TransformText());
+	var modelTemplate = new Zirpl.AppEngine.CodeGeneration.Templates.ModelTemplate(this, templateHelper);
+	this.Write(modelTemplate.TransformText());
 //	var modelMetadataTransform = new Zirpl.AppEngine.CodeGeneration.ModelMetadataTransform(this.Host, appGenerator);
 	//this.Write(modelMetadataTransform.TransformText());
-	//appGenerator.End();
+	templateHelper.End();
 
 	//var modelEnumTransform = new Zirpl.AppEngine.CodeGeneration.ModelEnumTransform();
 	//modelEnumTransform.Host = this.Host;
