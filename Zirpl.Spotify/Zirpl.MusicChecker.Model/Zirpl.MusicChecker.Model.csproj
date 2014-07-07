@@ -73,16 +73,40 @@
     <None Include="_auto\Address.auto.cs">
       <DependentUpon>AppTransform.txt4</DependentUpon>
     </None>
+    <None Include="_auto\AddressMetadata.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
     <None Include="_auto\NamePrefixType.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\NamePrefixTypeEnum.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\NamePrefixTypeMetadata.auto.cs">
       <DependentUpon>AppTransform.txt4</DependentUpon>
     </None>
     <None Include="_auto\NameSuffixType.auto.cs">
       <DependentUpon>AppTransform.txt4</DependentUpon>
     </None>
+    <None Include="_auto\NameSuffixTypeEnum.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\NameSuffixTypeMetadata.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
     <None Include="_auto\Settings\StateProvinceType.auto.cs">
       <DependentUpon>AppTransform.txt4</DependentUpon>
     </None>
+    <None Include="_auto\Settings\StateProvinceTypeEnum.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Settings\StateProvinceTypeMetadata.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
     <None Include="_auto\Settings\SystemSetting.auto.cs">
+      <DependentUpon>AppTransform.txt4</DependentUpon>
+    </None>
+    <None Include="_auto\Settings\SystemSettingMetadata.auto.cs">
       <DependentUpon>AppTransform.txt4</DependentUpon>
     </None>
     <None Include="packages.config" />

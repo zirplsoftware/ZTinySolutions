@@ -10,21 +10,5 @@
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.Collections.Generic" #> 
 <#
-	var templateHelper = new Zirpl.AppEngine.CodeGeneration.TemplateHelper(this);
-	//var appGenerator = new Zirpl.AppEngine.CodeGeneration.AppGenerator(this);
-	//var modelTransform = new Zirpl.AppEngine.CodeGeneration.ModelTransform(this.Host, appGenerator);
-	var modelTemplate = new Zirpl.AppEngine.CodeGeneration.Templates.ModelTemplate(this, templateHelper);
-	modelTemplate.TransformText();
-	//this.Write(modelTemplate.TransformText());
-//	var modelMetadataTransform = new Zirpl.AppEngine.CodeGeneration.ModelMetadataTransform(this.Host, appGenerator);
-	//this.Write(modelMetadataTransform.TransformText());
-	templateHelper.End();
-
-	//var modelEnumTransform = new Zirpl.AppEngine.CodeGeneration.ModelEnumTransform();
-	//modelEnumTransform.Host = this.Host;
-	//this.Write(modelEnumTransform.TransformText());
-
-	//var modelMetadataTransform = new Zirpl.AppEngine.CodeGeneration.ModelMetadataTransform();
-	//modelMetadataTransform.Host = this.Host;
-	//this.Write(modelMetadataTransform.TransformText());
+	Zirpl.AppEngine.CodeGeneration.AppGenerator.GenerateApp(this);
 #>
