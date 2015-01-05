@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using Headless;
 
 namespace Zirpl.Nuget.PackageDelister
@@ -16,7 +17,8 @@ namespace Zirpl.Nuget.PackageDelister
                 Console.Write("Enter your nuget username: ");
                 var username = Console.ReadLine();
                 Console.Write("Enter your nuget password: ");
-                var password = Console.ReadLine();
+                var password = GetPassword();
+                Console.WriteLine();
 
                 parameters.Clear();
                 parameters.Add(new PostEntry("SignIn.UserNameOrEmail", username));
@@ -35,8 +37,31 @@ namespace Zirpl.Nuget.PackageDelister
                 {
                     Console.WriteLine("logged in");
 
+                    var myPackagesPage = browser.GoTo<MyPackagesPage>();
+                    var myPackagesCurrentlyPublishedHtmlLinks = myPackagesPage.Find<HtmlElement>()
+                                .ById("published")
+                                .Find<HtmlLink>().AllByPredicate(o => o.AttributeExists("title") && o.GetAttribute("title") == "View package page." && o.Text != "...").ToArray();
+
+                    int i = 1;
+                    foreach (var packageLink in myPackagesCurrentlyPublishedHtmlLinks)
+                    {
+                        Console.WriteLine(i + ") " + packageLink.Href.Replace(@"/packages/", null).Replace(@"/", null));
+                        i++;
+                    }
+
                     Console.Write("Which package would you like to unlist in its entirety? ");
-                    var packageName = Console.ReadLine();
+                    var input = Console.ReadLine();
+                    String packageName = null;
+                    var number = 0;
+                    if (Int32.TryParse(input, out number))
+                    {
+                        packageName = myPackagesCurrentlyPublishedHtmlLinks[number - 1].Href.Replace(@"/packages/", null)
+                            .Replace(@"/", null);
+                    }
+                    else
+                    {
+                        packageName = input;
+                    }
                     if (!String.IsNullOrWhiteSpace(packageName))
                     {
                         var cont = true;
@@ -90,12 +115,46 @@ namespace Zirpl.Nuget.PackageDelister
                 get { return new Uri("https://www.nuget.org/users/account/LogOn?returnUrl=%2F"); }
             }
         }
+        public class MyPackagesPage : HtmlPage
+        {
+            public override Uri TargetLocation
+            {
+                get { return new Uri("https://www.nuget.org/account/Packages"); }
+            }
+        }
         public class PackagesPage : HtmlPage
         {
             public override Uri TargetLocation
             {
                 get { return new Uri("https://www.nuget.org/account/Packages"); }
             }
+        }
+
+        public static String GetPassword()
+        {
+            String pwd = "";
+            while (true)
+            {
+                ConsoleKeyInfo i = Console.ReadKey(true);
+                if (i.Key == ConsoleKey.Enter)
+                {
+                    break;
+                }
+                else if (i.Key == ConsoleKey.Backspace)
+                {
+                    if (pwd.Length > 0)
+                    {
+                        pwd.Substring(0, pwd.Length -1);
+                        Console.Write("\b \b");
+                    }
+                }
+                else
+                {
+                    pwd += i.KeyChar;
+                    Console.Write("*");
+                }
+            }
+            return pwd;
         }
     }
 }
