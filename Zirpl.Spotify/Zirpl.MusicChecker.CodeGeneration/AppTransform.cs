@@ -1,5 +1,4 @@
-﻿ 
-// Generated helper templates
+﻿// Generated helper templates
 // Zirpl.MusicChecker.Model\_auto\Settings\AppTransform.txt4
 // Zirpl.MusicChecker.Model\_auto\AppTransform.txt4
 // Generated items

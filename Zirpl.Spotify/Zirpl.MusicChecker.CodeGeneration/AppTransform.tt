@@ -1,14 +1,8 @@
 ﻿<#@ template  debug="true" hostSpecific="true" #>
 <#@ output extension=".cs" #>
-<#@ Assembly Name="System.Core" #>
-<#@ Assembly Name="System.Windows.Forms" #>
 <#@ Assembly Name="E:\projects\ZAppEngine\Zirpl.AppEngine.CodeGeneration.VS2013\bin\Debug\Zirpl.AppEngine.CodeGeneration.VS2013.dll" #>
-<#@ import namespace="System" #>
-<#@ import namespace="System.IO" #>
-<#@ import namespace="System.Diagnostics" #>
-<#@ import namespace="System.Linq" #>
-<#@ import namespace="System.Collections" #>
-<#@ import namespace="System.Collections.Generic" #> 
+<#@ import namespace="Zirpl.AppEngine.CodeGeneration" #>
 <#
-	Zirpl.AppEngine.CodeGeneration.AppGenerator.GenerateApp(this);
+	this.GenerateApp();
+	//Zirpl.AppEngine.CodeGeneration.AppGenerator.GenerateApp(this);
 #>
